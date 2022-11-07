@@ -3,7 +3,7 @@
 ## Table of contents
 
 * [Overview](#overview)
-* [Mockup Pages](#mockup)
+* [Mockup Pages](#mockup-pages)
 * [Team](#team)
 
 ## Overview
