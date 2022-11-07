@@ -1,4 +1,4 @@
-# Bowfolios
+# Club Finder Manoa
 
 ## Table of contents
 
