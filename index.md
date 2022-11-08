@@ -1,12 +1,12 @@
-# Club Finder Manoa
+# **Club Finder Manoa**
 
-## Table of contents
+## **Table of contents**
 
 * [Overview](#overview)
 * [Mockup Pages](#mockup-pages)
 * [Contact](#contact-information)
 
-## Overview
+## **Overview**
 <!-- Summarizes what the system does and what makes it special and different from other related applications -->
 
 *The problem*: UH Manoa has over 200 Registered Independent Organizations, plus many more that do not have this “official” status but are nonetheless active organizations. Unfortunately, there is no easy way for students to learn what student clubs (both registered and unregistered) exist, what they do, and how to get further involved.
@@ -24,9 +24,9 @@ Users can specify interest areas, and be notified when a new club is created mat
 
 Admins can monitor the site for inappropriate content, and create new categories of interests, capabilities, and goals.
 
-## Mockup Pages
+## **Mockup Pages**
 
-<div class="text-center">
+<div class="col d-flex justify-content-center text-center">
   <p class="pt-3">Landing page</p>
   <img width="90%" class="rounded" src="./images/landing-page.png">
 
@@ -39,19 +39,19 @@ Admins can monitor the site for inappropriate content, and create new categories
 </div>
 
 <!--
-## User Guide
+## **User Guide**
 <!-- Provide at least one screen shot of every page. This section should provide enough detail for a user to get up and running with your system (you can provide further help within the application itself)
 
-## Community Feedback
+## **Community Feedback**
 <!-- Provides information obtained from users about the system
 
-## Developer Guide
+## **Developer Guide**
 <!-- How to download, install, and run the system locally, as well as how to deploy it
 
-## Development History
+## **Development History**
 <!-- Explains the trajectory of development of the system: what was accomplished during each milestone. See the BowFolios system for details -->
 
-## Developer Contact
+## **Developer Contact**
 <!-- Explains who the developers of the system are and how to get in touch with them if you have comments or questions -->
 
 Club Finder Manoa is designed, implemented, and maintained by:
