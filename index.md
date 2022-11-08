@@ -14,15 +14,15 @@ The solution: The Club Finder Manoa application will provide a centralized direc
 
 Club Finder Manoa has three user roles, all of whom login with their UH ID. Regular users browse the directory. Club Admins have the ability to edit the data associated with their club. Super Admins make sure site content is appropriate and grant “club admin” privileges to selected users.
 
-The site should not simply support browsing by a list of clubs in alphabetical order, but should also allow filtering by interest area. For example, “athletic” clubs, “art” clubs, “music” clubs, etc. A club can belong to multiple interest areas.
+The site will allow a user to browse the list of clubs in alphabetical order as well as filter by interest. For example, “athletic” clubs, “art” clubs, “music” clubs, etc. A club can belong to multiple interest areas, making it easier for users to find.
 
 Users can specify interest areas, and be notified when a new club is created matching that interest area (or an existing club adds that interest area).
 
-Admins can monitor the site for inappropriate content, and create new categories of musical tastes, capabilities, and goals.
+Admins can monitor the site for inappropriate content, and create new categories of interests, capabilities, and goals.
 
 ## Mockup Pages
 
-Placeholder
+<img width="800px" class="rounded" src="./Images/Mockup.png">
 
 ## Team
 
