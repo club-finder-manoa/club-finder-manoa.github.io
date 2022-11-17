@@ -83,16 +83,13 @@ Users can view their profile and edit profile information by selecting "Profile"
   <img width="90%" class="rounded" src="./assets/images/profile.png">
 </div>
 
-<!--
 ### **Admin Page**
 
-Site administrators have access to a special admin page where they can edit users and clubs.
+Site administrators have access to a special admin page where they can edit users and change a user's "Club Admin" status. 
 
 <div class="col d-flex justify-content-center">
-  <img width="90%" class="rounded" src="./assets/images/login.png">
+  <img width="90%" class="rounded" src="./assets/images/admin.png">
 </div>
-
--->
 
 <!--
 ## **Community Feedback**
