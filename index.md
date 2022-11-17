@@ -4,7 +4,8 @@
 
 * [Overview](#overview)
 * [Mockup Pages](#mockup-pages)
-* [Contact](#contact-information)
+* [Development History](#development-history)
+* [Developer Contact](#developer-contact)
 
 ## **Overview**
 <!-- Summarizes what the system does and what makes it special and different from other related applications -->
@@ -25,16 +26,17 @@ Users can specify interest areas, and be notified when a new club is created mat
 Admins can monitor the site for inappropriate content, and create new categories of interests, capabilities, and goals.
 
 ## **Mockup Pages**
+<!-- To be deleted once layouts added in 'User Guide' section -->
 
 <div class="col d-flex justify-content-center text-center">
   <p class="pt-3">Landing page</p>
-  <img width="90%" class="rounded" src="./images/landing-page.png">
+  <img width="90%" class="rounded" src="./assets/images/landing-page.png">
 
   <p class="pt-3">All clubs page</p>
-  <img width="90%" class="rounded" src="./images/all-clubs-page.png">
+  <img width="90%" class="rounded" src="./assets/images/all-clubs-page.png">
 
   <p class="pt-3">Club details page</p>
-  <img width="90%" class="rounded" src="./images/club-page.png">
+  <img width="90%" class="rounded" src="./assets/images/club-page.png">
 
 </div>
 
@@ -46,10 +48,23 @@ Admins can monitor the site for inappropriate content, and create new categories
 <!-- Provides information obtained from users about the system
 
 ## **Developer Guide**
-<!-- How to download, install, and run the system locally, as well as how to deploy it
+<!-- How to download, install, and run the system locally, as well as how to deploy it -->
 
 ## **Development History**
 <!-- Explains the trajectory of development of the system: what was accomplished during each milestone. See the BowFolios system for details -->
+- **[M1](https://github.com/orgs/club-finder-manoa/projects/1/views/1?layout=board)** (Milestone 1)
+  - Complete mockups for major pages
+  - Define database schema
+  - Deploy to Digital Ocean
+- **[M2](https://github.com/orgs/club-finder-manoa/projects/2)** (Milestone 2)
+  - Integrate all mockup pages to deployed website
+  - Refine database schema
+  - Link pages to database
+
+## **Deployment**
+<!-- Section called Deployment containing a link to the deployed application running on Digital Ocean -->
+
+[View Website](http://142.93.232.214/)
 
 ## **Developer Contact**
 <!-- Explains who the developers of the system are and how to get in touch with them if you have comments or questions -->
@@ -61,5 +76,6 @@ Club Finder Manoa is designed, implemented, and maintained by:
 - [Jayson Iwanaka](https://jiwanaka.github.io/)
 - [Robert Godfrey](https://robertgodfrey.github.io/)
 
-<!-- TODO: change this link to actual repository once created -->
-For comments or questions, please contact us via our project's [GitHub](https://github.com/club-finder-manoa).
+[Team Contract](./team-contract.pdf)
+
+For comments or questions, please contact us via our project's [GitHub](https://github.com/club-finder-manoa/club-finder-manoa).
