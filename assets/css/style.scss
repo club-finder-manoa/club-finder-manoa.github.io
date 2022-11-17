@@ -1,8 +1,13 @@
 ---
 ---
 .page-header {
-  background-image: "";
+  background-image: linear-gradient(120deg, #ffffff, #000000);
   background-color: blue;
 }
 
 @import "{{ site.theme }}";
+
+.page-header {
+  background-image: linear-gradient(120deg, #ffffff, #000000);
+  background-color: blue;
+}
