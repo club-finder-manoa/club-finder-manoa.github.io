@@ -3,7 +3,7 @@
 ## **Table of contents**
 
 * [Overview](#overview)
-* [Mockup Pages](#mockup-pages)
+* [User Guide](#user-guide)
 * [Development History](#development-history)
 * [Deployment](#deployment)
 * [Developer Contact](#developer-contact)
@@ -31,7 +31,7 @@ Admins can monitor the site for inappropriate content, and create new categories
 
 This section provides a walkthrough of the Club Finder Manoa user interface and its capabilities.
 
-# **Landing Page**
+### **Landing Page**
 
 The landing page is presented to users when they visit the top-level URL to the site.
 
@@ -39,7 +39,7 @@ The landing page is presented to users when they visit the top-level URL to the 
   <img width="90%" class="rounded" src="./assets/images/landing.png">
 </div>
 
-# **Sign In / Sign Up**
+### **Sign In / Sign Up**
 
 Club Finder Manoa requires students to log in to access club information. Users are required to have a @hawaii.edu email to create an account. To log in, click "Login" in the upper right corner of the page. If you are a returning user, select "Sign In" and the sign in page will be displayed:
 
@@ -54,12 +54,12 @@ Alternatively, if you are a new user, select "Sign up" and you will be directed 
 </div>
 
 <!--
-# **Home Page**
+### **My Clubs Page**
 
 After logging in, you are taken to the "My Clubs" page (to be completed).
 -->
 
-# **All Clubs Page**
+### **All Clubs Page**
 
 Selecting "All Clubs" in the navbar will direct you to a page displaying a list of all of the clubs stored in the application's database:
 
@@ -67,7 +67,7 @@ Selecting "All Clubs" in the navbar will direct you to a page displaying a list 
   <img width="90%" class="rounded" src="./assets/images/all-clubs.png">
 </div>
 
-# **Club Page**
+### **Club Page**
 
 You can select a club from the list to see a specific club's page. This page displays more information about the club, including contact information, meeting times, and upcoming events:
 
@@ -75,7 +75,7 @@ You can select a club from the list to see a specific club's page. This page dis
   <img width="90%" class="rounded" src="./assets/images/club-page.png">
 </div>
 
-# **Profile Page**
+### **Profile Page**
 
 Users can view their profile and edit profile information by selecting "Profile" in the navbar:
 
@@ -84,7 +84,7 @@ Users can view their profile and edit profile information by selecting "Profile"
 </div>
 
 <!--
-# **Admin Page**
+### **Admin Page**
 
 Site administrators have access to a special admin page where they can edit users and clubs.
 
@@ -116,7 +116,7 @@ Site administrators have access to a special admin page where they can edit user
 ## **Deployment**
 <!-- Section called Deployment containing a link to the deployed application running on Digital Ocean -->
 
-[View Website](http://142.93.232.214/)
+[View Live Website](http://142.93.232.214/)
 
 ## **Developer Contact**
 <!-- Explains who the developers of the system are and how to get in touch with them if you have comments or questions -->
