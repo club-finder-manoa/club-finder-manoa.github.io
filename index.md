@@ -5,6 +5,7 @@
 * [Overview](#overview)
 * [Mockup Pages](#mockup-pages)
 * [Development History](#development-history)
+* [Deployment](#deployment)
 * [Developer Contact](#developer-contact)
 
 ## **Overview**
@@ -25,25 +26,75 @@ Users can specify interest areas, and be notified when a new club is created mat
 
 Admins can monitor the site for inappropriate content, and create new categories of interests, capabilities, and goals.
 
-## **Mockup Pages**
-<!-- To be deleted once layouts added in 'User Guide' section -->
+## **User Guide**
+<!-- Provide at least one screen shot of every page. This section should provide enough detail for a user to get up and running with your system (you can provide further help within the application itself) -->
 
-<div class="col d-flex justify-content-center text-center">
-  <p class="pt-3">Landing page</p>
-  <img width="90%" class="rounded" src="./assets/images/landing-page.png">
+This section provides a walkthrough of the Club Finder Manoa user interface and its capabilities.
 
-  <p class="pt-3">All clubs page</p>
-  <img width="90%" class="rounded" src="./assets/images/all-clubs-page.png">
+# **Landing Page**
 
-  <p class="pt-3">Club details page</p>
-  <img width="90%" class="rounded" src="./assets/images/club-page.png">
+The landing page is presented to users when they visit the top-level URL to the site.
 
+<div class="col d-flex justify-content-center">
+  <img width="90%" class="rounded" src="./assets/images/landing.png">
+</div>
+
+# **Sign In / Sign Up**
+
+Club Finder Manoa requires students to log in to access club information. Users are required to have a @hawaii.edu email to create an account. To log in, click "Login" in the upper right corner of the page. If you are a returning user, select "Sign In" and the sign in page will be displayed:
+
+<div class="col d-flex justify-content-center">
+  <img width="90%" class="rounded" src="./assets/images/login.png">
+</div>
+
+Alternatively, if you are a new user, select "Sign up" and you will be directed to a page where you can create a new account:
+
+<div class="col d-flex justify-content-center">
+  <img width="90%" class="rounded" src="./assets/images/signup.png">
 </div>
 
 <!--
-## **User Guide**
-<!-- Provide at least one screen shot of every page. This section should provide enough detail for a user to get up and running with your system (you can provide further help within the application itself)
+# **Home Page**
 
+After logging in, you are taken to the "My Clubs" page (to be completed).
+-->
+
+# **All Clubs Page**
+
+Selecting "All Clubs" in the navbar will direct you to a page displaying a list of all of the clubs stored in the application's database:
+
+<div class="col d-flex justify-content-center">
+  <img width="90%" class="rounded" src="./assets/images/all-clubs.png">
+</div>
+
+# **Club Page**
+
+You can select a club from the list to see a specific club's page. This page displays more information about the club, including contact information, meeting times, and upcoming events:
+
+<div class="col d-flex justify-content-center">
+  <img width="90%" class="rounded" src="./assets/images/club-page.png">
+</div>
+
+# **Profile Page**
+
+Users can view their profile and edit profile information by selecting "Profile" in the navbar:
+
+<div class="col d-flex justify-content-center">
+  <img width="90%" class="rounded" src="./assets/images/profile.png">
+</div>
+
+<!--
+# **Admin Page**
+
+Site administrators have access to a special admin page where they can edit users and clubs.
+
+<div class="col d-flex justify-content-center">
+  <img width="90%" class="rounded" src="./assets/images/login.png">
+</div>
+
+-->
+
+<!--
 ## **Community Feedback**
 <!-- Provides information obtained from users about the system
 
@@ -53,9 +104,10 @@ Admins can monitor the site for inappropriate content, and create new categories
 ## **Development History**
 <!-- Explains the trajectory of development of the system: what was accomplished during each milestone. See the BowFolios system for details -->
 - **[M1](https://github.com/orgs/club-finder-manoa/projects/1/views/1?layout=board)** (Milestone 1)
-  - Complete mockups for major pages
-  - Define database schema
-  - Deploy to Digital Ocean
+  - Completed mockups for major pages
+  - Defined database schemas
+  - Deployed to Digital Ocean
+
 - **[M2](https://github.com/orgs/club-finder-manoa/projects/2)** (Milestone 2)
   - Integrate all mockup pages to deployed website
   - Refine database schema
