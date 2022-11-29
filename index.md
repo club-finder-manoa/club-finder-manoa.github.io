@@ -17,7 +17,7 @@
 *The solution*: The Club Finder Manoa application will provide a centralized directory for UH Manoa student clubs. UH Manoa students can login to browse a well organized directory of all current student clubs, with brief descriptions, meeting times and locations, URLs to their websites (if any), contact information for officers, and a few select photos.
 
 Club Finder Manoa has three user roles, all of whom login with their UH ID:
-  - Regular users browse the directory
+  - Regular users browse the directory and find clubs based on their interests
   - Club Admins have the ability to edit the data associated with their club
   - Super Admins make sure site content is appropriate and grant “club admin” privileges to selected users
 
@@ -25,7 +25,7 @@ The site will allow a user to browse the list of clubs in alphabetical order as 
 
 Users can specify interest areas, and be notified when a new club is created matching that interest area (or an existing club adds that interest area).
 
-Admins can monitor the site for inappropriate content, and create new categories of interests, capabilities, and goals.
+Admins can monitor the site for inappropriate content, create and edit clubs, and create new categories of interests.
 
 ## **User Guide**
 <!-- Provide at least one screen shot of every page. This section should provide enough detail for a user to get up and running with your system (you can provide further help within the application itself) -->
@@ -42,7 +42,7 @@ The landing page is presented to users when they visit the top-level URL to the 
 
 ### **Sign In / Sign Up**
 
-Club Finder Manoa requires students to log in to access club information. Users are required to have a @hawaii.edu email to create an account. To log in, click "Login" in the upper right corner of the page. If you are a returning user, select "Sign In" and the sign in page will be displayed:
+Club Finder Manoa requires students to log in to access club information. Users are required to have an @hawaii.edu email to create an account. To log in, click "Login" in the upper right corner of the page. If you are a returning user, select "Sign In" and the sign in page will be displayed:
 
 <div class="col d-flex justify-content-center">
   <img width="90%" class="rounded" src="./assets/images/login.png">
@@ -54,11 +54,13 @@ Alternatively, if you are a new user, select "Sign up" and you will be directed 
   <img width="90%" class="rounded" src="./assets/images/signup.png">
 </div>
 
-<!--
 ### **My Clubs Page**
 
-After logging in, you are taken to the "My Clubs" page (to be completed).
--->
+After logging in, you are taken to the "My Clubs" page. This page displays all the clubs that the user has marked as saved:
+
+<div class="col d-flex justify-content-center">
+  <img width="90%" class="rounded" src="./assets/images/my-clubs.png">
+</div>
 
 ### **All Clubs Page**
 
@@ -86,7 +88,7 @@ Users can view their profile and edit profile information by selecting "Profile"
 
 ### **Admin Page**
 
-Site administrators have access to a special admin page where they can edit users and change a user's "Club Admin" status. 
+Site administrators have access to a special admin page where they can edit users and change a user's "Club Admin" status.
 
 <div class="col d-flex justify-content-center">
   <img width="90%" class="rounded" src="./assets/images/admin.png">
@@ -94,12 +96,10 @@ Site administrators have access to a special admin page where they can edit user
 
 <!--
 ## **Community Feedback**
-<!-- Provides information obtained from users about the system
+<!-- Provides information obtained from users about the system -->
 
 ## **Developer Guide**
 <!-- How to download, install, and run the system locally, as well as how to deploy it -->
-
-## **Developer Guide**
 
 This section provides information of interest to Meteor developers wishing to use this code base as a basis for their own development tasks.
 
@@ -109,7 +109,7 @@ First, [install Meteor](https://www.meteor.com/install).
 
 Second, visit the [Club Finder Manoa application github page](https://github.com/club-finder-manoa), and click the "Use this template" button to create your own repository initialized with a copy of this application. Alternatively, you can download the sources as a zip file or make a fork of the repo.  However you do it, download a copy of the repo to your local computer.
 
-Third, cd into the bowfolios/app directory and install libraries with:
+Third, cd into the club-finder-manoa/app directory and install libraries with:
 
 ```
 $ meteor npm install
@@ -125,7 +125,7 @@ If all goes well, the application will appear at [http://localhost:3000](http://
 
 ### **Application Design**
 
-Club Finder Manoa is based upon [bowfolios](https://bowfolios.github.io/). Please use the videos and documentation at those sites to better acquaint yourself with the basic application design and form processing in Bowfolios.
+Club Finder Manoa is based upon [bowfolios](https://bowfolios.github.io/).
 
 ## **Initialization**
 
@@ -133,7 +133,7 @@ The [config](https://github.com/club-finder-manoa/club-finder-manoa/tree/main/co
 
 This file contains default definitions for Clubs and Users and the relationship between them.
 
-The settings.development.json file contains a field called "loadAssetsFile". It is set to false, but if you change it to true, then the data in the file app/private/data.json will also be loaded.  The code to do this illustrates how to initialize a system when the initial data exceeds the size limitations for the settings file.
+The settings.development.json file contains a field called "loadAssetsFile". It is set to true, which means that the data in the file app/private/clubs.json will also be loaded. If you change this value to false, the default clubs will not be loaded.
 
 
 ### **Quality Assurance**
