@@ -4,6 +4,7 @@
 
 * [Overview](#overview)
 * [User Guide](#user-guide)
+* [Developer Guide](#developer-guide)
 * [Development History](#development-history)
 * [Deployment](#deployment)
 * [Developer Contact](#developer-contact)
@@ -98,11 +99,11 @@ Site administrators have access to a special admin page where they can edit user
 ## **Developer Guide**
 <!-- How to download, install, and run the system locally, as well as how to deploy it -->
 
-## Developer Guide
+## **Developer Guide**
 
 This section provides information of interest to Meteor developers wishing to use this code base as a basis for their own development tasks.
 
-### Installation
+### **Installation**
 
 First, [install Meteor](https://www.meteor.com/install).
 
@@ -122,11 +123,11 @@ $ meteor npm run start
 
 If all goes well, the application will appear at [http://localhost:3000](http://localhost:3000).
 
-### Application Design
+### **Application Design**
 
 Club Finder Manoa is based upon [bowfolios](https://bowfolios.github.io/). Please use the videos and documentation at those sites to better acquaint yourself with the basic application design and form processing in Bowfolios.
 
-## Initialization
+## **Initialization**
 
 The [config](https://github.com/club-finder-manoa/club-finder-manoa/tree/main/config) directory is intended to hold settings files.  The repository contains one file: [config/settings.development.json](https://github.com/bowfolios/bowfolios/blob/main/config/settings.development.json).
 
@@ -135,9 +136,9 @@ This file contains default definitions for Clubs and Users and the relationship 
 The settings.development.json file contains a field called "loadAssetsFile". It is set to false, but if you change it to true, then the data in the file app/private/data.json will also be loaded.  The code to do this illustrates how to initialize a system when the initial data exceeds the size limitations for the settings file.
 
 
-### Quality Assurance
+### **Quality Assurance**
 
-#### ESLint
+#### **ESLint**
 
 Club Finder Manoa includes a [.eslintrc](https://github.com/bowfolios/bowfolios/blob/main/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
 
@@ -160,7 +161,7 @@ ESLint should run without generating any errors.
 
 It's significantly easier to do development with ESLint integrated directly into your IDE (such as IntelliJ).
 
-#### End to End Testing
+#### **End to End Testing**
 
 Club Finder Manoa uses [TestCafe](https://devexpress.github.io/testcafe/) to provide automated end-to-end testing.
 
@@ -234,7 +235,7 @@ All the tests pass, but the first test is marked as "unstable". At the time of w
 
 The only impact of quarantine mode should be that the first test is marked as "unstable".
 
-## From mockup to production
+## **From mockup to production**
 
 Club Finder Manoa is meant to illustrate the use of Meteor for developing an initial proof-of-concept prototype.  For a production application, several additional security-related changes must be implemented:
 
@@ -244,7 +245,7 @@ Club Finder Manoa is meant to illustrate the use of Meteor for developing an ini
 
 (Note that these changes do not need to be implemented for ICS 314, although they are relatively straightforward to accomplish.)
 
-## Continuous Integration
+## **Continuous Integration**
 
 [![ci-club-finder-manoa](https://github.com/club-finder-manoa/club-finder-manoa/actions/workflows/ci.yml/badge.svg)](https://github.com/club-finder-manoa/club-finder-manoa/actions/workflows/ci.yml)
 
