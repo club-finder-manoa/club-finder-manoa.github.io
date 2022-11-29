@@ -98,6 +98,162 @@ Site administrators have access to a special admin page where they can edit user
 ## **Developer Guide**
 <!-- How to download, install, and run the system locally, as well as how to deploy it -->
 
+## Developer Guide
+
+This section provides information of interest to Meteor developers wishing to use this code base as a basis for their own development tasks.
+
+### Installation
+
+First, [install Meteor](https://www.meteor.com/install).
+
+Second, visit the [Club Finder Manoa application github page](https://github.com/club-finder-manoa), and click the "Use this template" button to create your own repository initialized with a copy of this application. Alternatively, you can download the sources as a zip file or make a fork of the repo.  However you do it, download a copy of the repo to your local computer.
+
+Third, cd into the bowfolios/app directory and install libraries with:
+
+```
+$ meteor npm install
+```
+
+Fourth, run the system with:
+
+```
+$ meteor npm run start
+```
+
+If all goes well, the application will appear at [http://localhost:3000](http://localhost:3000).
+
+### Application Design
+
+Club Finder Manoa is based upon [bowfolios](https://bowfolios.github.io/). Please use the videos and documentation at those sites to better acquaint yourself with the basic application design and form processing in Bowfolios.
+
+## Initialization
+
+The [config](https://github.com/club-finder-manoa/club-finder-manoa/tree/main/config) directory is intended to hold settings files.  The repository contains one file: [config/settings.development.json](https://github.com/bowfolios/bowfolios/blob/main/config/settings.development.json).
+
+This file contains default definitions for Clubs and Users and the relationship between them.
+
+The settings.development.json file contains a field called "loadAssetsFile". It is set to false, but if you change it to true, then the data in the file app/private/data.json will also be loaded.  The code to do this illustrates how to initialize a system when the initial data exceeds the size limitations for the settings file.
+
+
+### Quality Assurance
+
+#### ESLint
+
+Club Finder Manoa includes a [.eslintrc](https://github.com/bowfolios/bowfolios/blob/main/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
+
+```
+meteor npm run lint
+```
+
+Here is sample output indicating that no ESLint errors were detected:
+
+```
+$ meteor npm run lint
+
+> meteor-application-template-react@ lint /Users/destyneefagaragan/Documents/GitHub/club-finder-manoa/app
+> eslint --quiet --ext .jsx --ext .js ./imports && eslint --quiet --ext .js ./tests
+
+$
+```
+
+ESLint should run without generating any errors.
+
+It's significantly easier to do development with ESLint integrated directly into your IDE (such as IntelliJ).
+
+#### End to End Testing
+
+Club Finder Manoa uses [TestCafe](https://devexpress.github.io/testcafe/) to provide automated end-to-end testing.
+
+The Club Finder Manoa end-to-end test code employs the page object model design pattern.  In the [club finder manoa tests/ directory](https://github.com/club-finder-manoa/club-finder-manoa/tree/main/app/tests), the file [tests.testcafe.js](https://github.com/bowfolios/bowfolios/blob/main/app/tests/tests.testcafe.js) contains the TestCafe test definitions. The remaining files in the directory contain "page object models" for the various pages in the system (i.e. Home, Landing, Interests, etc.) as well as one component (navbar). This organization makes the test code shorter, easier to understand, and easier to debug.
+
+To run the end-to-end tests in development mode, you must first start up a BowFolios instance by invoking `meteor npm run start` in one console window.
+
+Then, in another console window, start up the end-to-end tests with:
+
+```
+meteor npm run testcafe
+```
+
+You will see browser windows appear and disappear as the tests run.  If the tests finish successfully, you should see the following in your second console window:
+
+```
+$ meteor npm run testcafe
+
+> meteor-application-template-react@ testcafe /Users/destyneefagaragan/Documents/GitHub/club-finder-manoa/app
+> testcafe chrome tests/*.testcafe.js
+
+ Running tests in:
+ - Chrome 107.0.0.0 / Monterey 12
+
+ Club Finder Manoa localhost test with default db
+ ✓ Test that landing page shows up
+ ✓ Test that signup page, then logout works
+ ✓ Test that signin and signout work
+ ✓ Test the All Clubs page
+ ✓ Test the My Club page
+ ✓ Test the Admin page
+
+
+ 9 passed (40s)
+
+ $
+```
+
+You can also run the testcafe tests in "continuous integration mode".  This mode is appropriate when you want to run the tests using a continuous integration service like Jenkins, Semaphore, CircleCI, etc.  In this case, it is problematic to already have the server running in a separate console, and you cannot have the browser window appear and disappear.
+
+To run the testcafe tests in continuous integration mode, first ensure that BowFolios is not running in any console.
+
+Then, invoke `meteor npm run testcafe-ci`.  You will not see any windows appear.  When the tests finish, the console should look like this:
+
+```
+$ meteor npm run testcafe-ci
+
+> meteor-application-template-react@ testcafe-ci /Users/destyneefagaragan/Documents/GitHub/club-finder-manoa/app
+> testcafe chrome:headless tests/*.testcafe.js -q attemptLimit=5,successThreshold=2 --app "meteor npm run start"
+
+
+ Running tests in:
+ - Chrome 107.0.0.0 / Monterey 12
+
+ Club Finder Manoa localhost test with default db
+ ✓ Test that landing page shows up
+ ✓ Test that signup page, then logout works
+ ✓ Test that signin and signout work
+ ✓ Test the All Clubs page
+ ✓ Test the My Club page
+ ✓ Test the Admin page
+
+
+
+ 9 passed (56s)
+
+$
+```
+
+All the tests pass, but the first test is marked as "unstable". At the time of writing, TestCafe fails the first time it tries to run a test in this mode, but subsequent attempts run normally. To prevent the test run from failing due to this problem with TestCafe, we enable [testcafe quarantine mode](https://devexpress.github.io/testcafe/documentation/guides/basic-guides/run-tests.html#quarantine-mode).
+
+The only impact of quarantine mode should be that the first test is marked as "unstable".
+
+## From mockup to production
+
+Club Finder Manoa is meant to illustrate the use of Meteor for developing an initial proof-of-concept prototype.  For a production application, several additional security-related changes must be implemented:
+
+* Use of email-based password specification for users, and/or use of an alternative authentication mechanism.
+* Use of https so that passwords are sent in encrypted format.
+* Removal of the insecure package, and the addition of Meteor Methods to replace client-side DB updates.
+
+(Note that these changes do not need to be implemented for ICS 314, although they are relatively straightforward to accomplish.)
+
+## Continuous Integration
+
+[![ci-club-finder-manoa](https://github.com/club-finder-manoa/club-finder-manoa/actions/workflows/ci.yml/badge.svg)](https://github.com/club-finder-manoa/club-finder-manoa/actions/workflows/ci.yml)
+
+Club Finder Manoa uses [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions) to automatically run ESLint and TestCafe each time a commit is made to the default branch.  You can see the results of all recent "workflows" at [https://github.com/club-finder-manoa/club-finder-manoa/actions](https://github.com/club-finder-manoa/club-finder-manoa/actions)
+
+The workflow definition file is quite simple and is located at
+[.github/workflows/ci.yml](https://github.com/club-finder-manoa/club-finder-manoa/actions/workflows/ci.yml).
+
+
 ## **Development History**
 <!-- Explains the trajectory of development of the system: what was accomplished during each milestone. See the BowFolios system for details -->
 - **[M1](https://github.com/orgs/club-finder-manoa/projects/1/views/1?layout=board)** (Milestone 1)
@@ -109,6 +265,11 @@ Site administrators have access to a special admin page where they can edit user
   - Integrate all mockup pages to deployed website
   - Refine database schema
   - Link pages to database
+
+- **[M3](https://github.com/orgs/club-finder-manoa/projects/3)** (Milestone 3)
+  - Incorporate a significant amount of “real” data into your system
+  - Find at least five UH community members (not from ICS 314) to try out your system and provide feedback.
+  - Implement acceptance testing
 
 ## **Deployment**
 <!-- Section called Deployment containing a link to the deployed application running on Digital Ocean -->
