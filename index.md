@@ -91,7 +91,7 @@ Users can view their profile and edit profile information by selecting "Profile"
 Site administrators have access to a special admin page where they can edit users and change a user's "Club Admin" status.
 
 <div class="col d-flex justify-content-center">
-  <img width="90%" class="rounded" src="./assets/images/admin.png">
+  <img width="90%" class="rounded" src="./assets/images/admin.JPG">
 </div>
 
 <!--
