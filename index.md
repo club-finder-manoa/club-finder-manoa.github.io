@@ -59,7 +59,7 @@ Alternatively, if you are a new user, select "Sign up" and you will be directed 
 After logging in, you are taken to the "My Clubs" page. This page displays all the clubs that the user has marked as saved:
 
 <div class="col d-flex justify-content-center">
-  <img width="90%" class="rounded" src="./assets/images/my-clubs.png">
+  <img width="90%" class="rounded" src="./assets/images/my-clubs.JPG">
 </div>
 
 ### **All Clubs Page**
@@ -67,7 +67,7 @@ After logging in, you are taken to the "My Clubs" page. This page displays all t
 Selecting "All Clubs" in the navbar will direct you to a page displaying a list of all of the clubs stored in the application's database:
 
 <div class="col d-flex justify-content-center">
-  <img width="90%" class="rounded" src="./assets/images/all-clubs.png">
+  <img width="90%" class="rounded" src="./assets/images/all-clubs.JPG">
 </div>
 
 ### **Club Page**
@@ -75,7 +75,7 @@ Selecting "All Clubs" in the navbar will direct you to a page displaying a list 
 You can select a club from the list to see a specific club's page. This page displays more information about the club, including contact information, meeting times, and upcoming events:
 
 <div class="col d-flex justify-content-center">
-  <img width="90%" class="rounded" src="./assets/images/club-page.png">
+  <img width="90%" class="rounded" src="./assets/images/club-info.JPG">
 </div>
 
 ### **Profile Page**
@@ -83,7 +83,7 @@ You can select a club from the list to see a specific club's page. This page dis
 Users can view their profile and edit profile information by selecting "Profile" in the navbar:
 
 <div class="col d-flex justify-content-center">
-  <img width="90%" class="rounded" src="./assets/images/profile.png">
+  <img width="90%" class="rounded" src="./assets/images/profile.JPG">
 </div>
 
 ### **Admin Page**
