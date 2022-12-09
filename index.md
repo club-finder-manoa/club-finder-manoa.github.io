@@ -51,7 +51,7 @@ Club Finder Manoa requires students to log in to access club information. Users 
 Alternatively, if you are a new user, select "Sign up" and you will be directed to a page where you can create a new account:
 
 <div class="col d-flex justify-content-center">
-  <img width="90%" class="rounded" src="./assets/images/signup.png">
+  <img width="90%" class="rounded" src="./assets/images/sign-up.JPG">
 </div>
 
 ### **My Clubs Page**
