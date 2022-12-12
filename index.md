@@ -98,22 +98,19 @@ Site administrators have access to a special admin page where they can edit user
 We asked 5 University of Hawaii students to give their impressions and feedback for the "Club Finder Manoa" application.  To prevent any bias, we asked students who have not taken ICS 314 - Software Enginnering I, as they have experienced creating a similar project.  Overall feedback was positive.  All users agreed that the core functionality of providing a centralized database for students to find information on all the RIOs (Registered Independent Organizations) available for them to join has been fully implemented.  Club admin testers were fully satisfied with the ability to create and edit their club pages.
 
 Positive comments include:
-<li> UI is appealing/looks nice
-<li> Simple to understand and easy to use
-<li> Lots of search options
-<li> Easy to look up all the clubs, many of which users didnt know about
-<br>
-<br>
+* UI is appealing/looks nice
+* Simple to understand and easy to use
+* Lots of search options
+* Easy to look up all the clubs, many of which users didnt know about
+
 Some possible improvements are:
-<br>
-<br>
-<li> A gallery of club pictures (events, general meetings, etc)
-<li> Some clubs do not have meeting times
-<li> Discord/Instagram/Facebook links
-<li> Personal calendar with dates and times of meetings for the clubs the user has saved
-<li> Friends list and a way to see what clubs your friends are interested in
-<li> For club admins, a way to search for people with certain interests
-<li> Mobile app
+* A gallery of club pictures (events, general meetings, etc)
+* Some clubs do not have meeting times
+* Discord/Instagram/Facebook links
+* Personal calendar with dates and times of meetings for the clubs the user has saved
+* Friends list and a way to see what clubs your friends are interested in
+* For club admins, a way to search for people with certain interests
+* Mobile app
 
 ## **Developer Guide**
 <!-- How to download, install, and run the system locally, as well as how to deploy it -->
