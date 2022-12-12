@@ -4,6 +4,7 @@
 
 * [Overview](#overview)
 * [User Guide](#user-guide)
+* [Community Feedback](#community-feedback)
 * [Developer Guide](#developer-guide)
 * [Development History](#development-history)
 * [Deployment](#deployment)
