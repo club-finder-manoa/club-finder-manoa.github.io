@@ -13,18 +13,16 @@
 ## **Overview**
 <!-- Summarizes what the system does and what makes it special and different from other related applications -->
 
-*The problem*: UH Manoa has over 200 Registered Independent Organizations, plus many more that do not have this “official” status but are nonetheless active organizations. Unfortunately, there is no easy way for students to learn what student clubs (both registered and unregistered) exist, what they do, and how to get further involved.
+*The problem*: UH Manoa has over 200 registered independent organizations, plus many more that do not have this “official” status but are nonetheless active organizations. Unfortunately, there is no easy way for students to learn what student clubs exist, what they do, and how to get further involved.
 
-*The solution*: The Club Finder Manoa application will provide a centralized directory for UH Manoa student clubs. UH Manoa students can login to browse a well organized directory of all current student clubs, with brief descriptions, meeting times and locations, URLs to their websites (if any), contact information for officers, and a few select photos.
+*The solution*: The Club Finder Manoa application provides a centralized directory for UH Manoa student clubs. UH Manoa students can log in to browse a well-organized directory of all current student clubs, with brief descriptions, meeting times and locations, URLs to their websites (if any), and contact information for officers.
 
-Club Finder Manoa has three user roles, all of whom login with their UH ID:
+Club Finder Manoa has three user roles, all of whom log in with their UH ID:
   - Regular users browse the directory and find clubs based on their interests
   - Club Admins have the ability to edit the data associated with their club
   - Super Admins make sure site content is appropriate and grant “club admin” privileges to selected users
 
-The site will allow a user to browse the list of clubs in alphabetical order as well as filter by interest. For example, “athletic” clubs, “art” clubs, “music” clubs, etc. A club can belong to multiple interest areas, making it easier for users to find.
-
-Users can specify interest areas, and be notified when a new club is created matching that interest area (or an existing club adds that interest area).
+The site allows users to browse the list of clubs in alphabetical order as well as filter by interest, eg. “athletic” clubs, “art” clubs, “music” clubs, etc. A club can belong to multiple interest areas, making it easier for users to find.
 
 Admins can monitor the site for inappropriate content, create and edit clubs, and create new categories of interests.
 
@@ -73,7 +71,7 @@ Selecting "All Clubs" in the navbar will direct you to a page displaying a list 
 
 ### **Club Page**
 
-You can select a club from the list to see a specific club's page. This page displays more information about the club, including contact information, meeting times, and upcoming events:
+You can select a club from the list to see a specific club's page. This page displays more information about the club, including contact information, other users who have saved the club, meeting times, and upcoming events:
 
 <div class="col d-flex justify-content-center">
   <img width="90%" class="rounded" src="./assets/images/club-page.JPG">
@@ -89,7 +87,7 @@ Users can view their profile and edit profile information by selecting "Profile"
 
 ### **Admin Page**
 
-Site administrators have access to a special admin page where they can edit users and change a user's "Club Admin" status.
+Site administrators have access to a special admin page where they can change a user's "Club Admin" status, reset a user's passwords, and delete a user's account.
 
 <div class="col d-flex justify-content-center">
   <img width="90%" class="rounded" src="./assets/images/admin.JPG">
@@ -97,7 +95,7 @@ Site administrators have access to a special admin page where they can edit user
 
 ### **Edit Club Page**
 
-Administrators can access the edit club page where they can change the club page's informations.
+Site administrators and club administrators can access the "Edit Club" page, where they can update the club's information.
 
 <div class="col d-flex justify-content-center">
   <img width="90%" class="rounded" src="./assets/images/edit-club.JPG">
@@ -105,13 +103,13 @@ Administrators can access the edit club page where they can change the club page
 
 
 ## **Community Feedback**
-We asked 5 University of Hawaii students to give their impressions and feedback for the "Club Finder Manoa" application.  To prevent any bias, we asked students who have not taken ICS 314 - Software Enginnering I, as they have experienced creating a similar project.  Overall feedback was positive.  All users agreed that the core functionality of providing a centralized database for students to find information on all the RIOs (Registered Independent Organizations) available for them to join has been fully implemented.  Club admin testers were fully satisfied with the ability to create and edit their club pages.
+We asked 5 University of Hawaii students to give their impressions and feedback for the "Club Finder Manoa" application.  To prevent any bias, we asked students who have not taken ICS 314 - Software Enginnering I, as they have experienced creating similar projects. Overall, feedback was positive. All users agreed that the core functionality of providing a centralized database for students to find information on all the RIOs (Registered Independent Organizations) available for them to join has been fully implemented.  Club admin testers were fully satisfied with the ability to create and edit their club pages.
 
 Positive comments include:
 * UI is appealing/looks nice
 * Simple to understand and easy to use
 * Lots of search options
-* Easy to look up all the clubs, many of which users didnt know about
+* Easy to look up all the clubs, many of which users didn't know about
 
 Some possible improvements are:
 * A gallery of club pictures (events, general meetings, etc)
@@ -189,9 +187,9 @@ It's significantly easier to do development with ESLint integrated directly into
 
 Club Finder Manoa uses [TestCafe](https://devexpress.github.io/testcafe/) to provide automated end-to-end testing.
 
-The Club Finder Manoa end-to-end test code employs the page object model design pattern.  In the [club finder manoa tests/ directory](https://github.com/club-finder-manoa/club-finder-manoa/tree/main/app/tests), the file [tests.testcafe.js](https://github.com/bowfolios/bowfolios/blob/main/app/tests/tests.testcafe.js) contains the TestCafe test definitions. The remaining files in the directory contain "page object models" for the various pages in the system (i.e. Home, Landing, Interests, etc.) as well as one component (navbar). This organization makes the test code shorter, easier to understand, and easier to debug.
+The Club Finder Manoa's end-to-end test code employs the page-object-model design pattern. In the [club finder manoa tests/ directory](https://github.com/club-finder-manoa/club-finder-manoa/tree/main/app/tests), the file [tests.testcafe.js](https://github.com/club-finder-manoa/club-finder-manoa/tree/main/app/tests/tests.testcafe.js) contains the TestCafe test definitions. The remaining files in the directory contain "page object models" for the various pages in the system (i.e. Home, Landing, Interests, etc.) as well as one component (navbar). This organization makes the test code shorter, easier to understand, and easier to debug.
 
-To run the end-to-end tests in development mode, you must first start up a BowFolios instance by invoking `meteor npm run start` in one console window.
+To run the end-to-end tests in development mode, you must first start up a Club Finder Manoa instance by invoking `meteor npm run start` in one console window.
 
 Then, in another console window, start up the end-to-end tests with:
 
@@ -199,7 +197,7 @@ Then, in another console window, start up the end-to-end tests with:
 meteor npm run testcafe
 ```
 
-You will see browser windows appear and disappear as the tests run.  If the tests finish successfully, you should see the following in your second console window:
+You will see browser windows appear and disappear as the tests run. If the tests finish successfully, you should see the following in your second console window:
 
 ```
 $ meteor npm run testcafe
@@ -235,7 +233,7 @@ $ meteor npm run testcafe
 
 You can also run the testcafe tests in "continuous integration mode".  This mode is appropriate when you want to run the tests using a continuous integration service like Jenkins, Semaphore, CircleCI, etc.  In this case, it is problematic to already have the server running in a separate console, and you cannot have the browser window appear and disappear.
 
-To run the testcafe tests in continuous integration mode, first ensure that BowFolios is not running in any console.
+To run the testcafe tests in continuous integration mode, first ensure that Club Finder Manoa is not running in any console.
 
 Then, invoke `meteor npm run testcafe-ci`.  You will not see any windows appear.  When the tests finish, the console should look like this:
 
@@ -249,7 +247,7 @@ $ meteor npm run testcafe-ci
  - Chrome 108.0.5359.99 / Windows 10
 
  Club Finder Manoa localhost test with default db
- √ Test that landing page shows up 
+ √ Test that landing page shows up
  √ Test that signup page, then logout works
  √ Test that signin and signout work
  √ Test the All Clubs page
@@ -276,13 +274,11 @@ The only impact of quarantine mode should be that the first test is marked as "u
 
 ## **From mockup to production**
 
-Club Finder Manoa is meant to illustrate the use of Meteor for developing an initial proof-of-concept prototype.  For a production application, several additional security-related changes must be implemented:
+For a production application, several additional security-related changes must be implemented:
 
 * Use of email-based password specification for users, and/or use of an alternative authentication mechanism.
 * Use of https so that passwords are sent in encrypted format.
 * Removal of the insecure package, and the addition of Meteor Methods to replace client-side DB updates.
-
-(Note that these changes do not need to be implemented for ICS 314, although they are relatively straightforward to accomplish.)
 
 ## **Continuous Integration**
 
@@ -302,14 +298,14 @@ The workflow definition file is quite simple and is located at
   - Deployed to Digital Ocean
 
 - **[M2](https://github.com/orgs/club-finder-manoa/projects/2)** (Milestone 2)
-  - Integrate all mockup pages to deployed website
-  - Refine database schema
-  - Link pages to database
+  - Integrated all mockup pages to deployed website
+  - Refined database schema
+  - Linked pages to database
 
 - **[M3](https://github.com/orgs/club-finder-manoa/projects/3)** (Milestone 3)
-  - Incorporate a significant amount of “real” data into your system
-  - Find at least five UH community members (not from ICS 314) to try out your system and provide feedback.
-  - Implement acceptance testing
+  - Incorporated a significant amount of club data into system
+  - Found five UH community members to test system and provide feedback
+  - Implemented acceptance testing
 
 ## **Deployment**
 <!-- Section called Deployment containing a link to the deployed application running on Digital Ocean -->
