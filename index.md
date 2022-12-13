@@ -76,7 +76,7 @@ Selecting "All Clubs" in the navbar will direct you to a page displaying a list 
 You can select a club from the list to see a specific club's page. This page displays more information about the club, including contact information, meeting times, and upcoming events:
 
 <div class="col d-flex justify-content-center">
-  <img width="90%" class="rounded" src="./assets/images/club-info.JPG">
+  <img width="90%" class="rounded" src="./assets/images/club-page.JPG">
 </div>
 
 ### **Profile Page**
@@ -94,6 +94,15 @@ Site administrators have access to a special admin page where they can edit user
 <div class="col d-flex justify-content-center">
   <img width="90%" class="rounded" src="./assets/images/admin.JPG">
 </div>
+
+### **Edit Club Page**
+
+Administrators can access the edit club page where they can change the club page's informations.
+
+<div class="col d-flex justify-content-center">
+  <img width="90%" class="rounded" src="./assets/images/edit-club.JPG">
+</div>
+
 
 ## **Community Feedback**
 We asked 5 University of Hawaii students to give their impressions and feedback for the "Club Finder Manoa" application.  To prevent any bias, we asked students who have not taken ICS 314 - Software Enginnering I, as they have experienced creating a similar project.  Overall feedback was positive.  All users agreed that the core functionality of providing a centralized database for students to find information on all the RIOs (Registered Independent Organizations) available for them to join has been fully implemented.  Club admin testers were fully satisfied with the ability to create and edit their club pages.
@@ -195,22 +204,31 @@ You will see browser windows appear and disappear as the tests run.  If the test
 ```
 $ meteor npm run testcafe
 
-> meteor-application-template-react@ testcafe /Users/destyneefagaragan/Documents/GitHub/club-finder-manoa/app
+> meteor-application-template-react@ testcafe C:\Users\gwen\Documents\GitHub\club-finder-manoa\app
 > testcafe chrome tests/*.testcafe.js
 
  Running tests in:
- - Chrome 107.0.0.0 / Monterey 12
+ - Chrome 108.0.0.0 / Windows 10
 
  Club Finder Manoa localhost test with default db
- ✓ Test that landing page shows up
- ✓ Test that signup page, then logout works
- ✓ Test that signin and signout work
- ✓ Test the All Clubs page
- ✓ Test the My Club page
- ✓ Test the Admin page
+ √ Test that landing page shows up
+ √ Test that signup page, then logout works
+ √ Test that signin and signout work
+ √ Test the All Clubs page
+ √ Test the Club Information page
+ √ Test the Club save in Club Information page
+ √ Test the Club remove in Club Information page
+ √ Test the My Club page
+ √ Test the Profile page
+ √ Test the Profile Edit page
+ √ Test Editing Club
+ √ Test the Admin page
+ √ Test the Admin Password reset
+ √ Test the Admin Delete User
 
 
- 9 passed (40s)
+ 14 passed (3m 30s)
+
 
  $
 ```
@@ -224,24 +242,30 @@ Then, invoke `meteor npm run testcafe-ci`.  You will not see any windows appear.
 ```
 $ meteor npm run testcafe-ci
 
-> meteor-application-template-react@ testcafe-ci /Users/destyneefagaragan/Documents/GitHub/club-finder-manoa/app
+> meteor-application-template-react@ testcafe-ci C:\Users\gwen\Documents\GitHub\club-finder-manoa\app
 > testcafe chrome:headless tests/*.testcafe.js -q attemptLimit=5,successThreshold=2 --app "meteor npm run start"
 
-
  Running tests in:
- - Chrome 107.0.0.0 / Monterey 12
+ - Chrome 108.0.5359.99 / Windows 10
 
  Club Finder Manoa localhost test with default db
- ✓ Test that landing page shows up
- ✓ Test that signup page, then logout works
- ✓ Test that signin and signout work
- ✓ Test the All Clubs page
- ✓ Test the My Club page
- ✓ Test the Admin page
+ √ Test that landing page shows up 
+ √ Test that signup page, then logout works
+ √ Test that signin and signout work
+ √ Test the All Clubs page
+ √ Test the Club Information page
+ √ Test the Club save in Club Information page
+ √ Test the Club remove in Club Information page
+ √ Test the My Club page
+ √ Test the Profile page
+ √ Test the Profile Edit page
+ √ Test Editing Club
+ √ Test the Admin page
+ √ Test the Admin Password reset
+ √ Test the Admin Delete User
 
 
-
- 9 passed (56s)
+ 14 passed (6m 47s)
 
 $
 ```
